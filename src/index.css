@@ -1,4 +1,36 @@
-:root {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+  :root {
+    --primary-button-px: 70px;
+    --primary-button-py: 15px;
+    --padding-primary: 80px;
+    --padding-secondary: 30px;
+    --h-catalog-card: 350px;
+    --w-catalog-card: 350px;
+    --w-product-card: 400px;
+    --w-login-form: 330px;
+    --gap-xs: 18px;
+    --gap-xl: 130px;
+    --h-section-default: 350px;
+    --w-email-input: 450px;
+    --h-email-input: 50px;
+    --h-products-map: 450px;
+    --w-products-map: 300px;
+  }
+/* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -65,4 +97,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
