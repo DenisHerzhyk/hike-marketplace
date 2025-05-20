@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './pages/home/Home.tsx';
+import Home from './pages/home/ui/Home.tsx';
 import Login from './pages/login/ui/Login.tsx';
 import Register from './pages/register/ui/Register.tsx';
 import {BrowserRouter, Routes, Route} from "react-router-dom";

@@ -1,5 +1,5 @@
 type ButtonType = {
-    text: string,
+    text: string | React.ReactNode,
     bgColor: string,
     color: string,
     type?: "button" | "submit" | "reset";
