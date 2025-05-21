@@ -55,7 +55,7 @@ const Home: React.FC<HomeType> = ({cart, setCart}) => {
         <div className="Home">
             <div className="w-screen h-screen relative flex flex-col flex-wrap justify-center text-white sm:px-[var(--padding-primary)] px-[var(--padding-secondary)] bg-center bg-no-repeat bg-cover" style={{backgroundImage: `url(${hike})`}}>
                 <div className="content z-20">
-                    <h1 className="font-extrabold text-3xl lg:text-3xl xl:text-6xl mb-4">30-60% OFF<br/>MID SEASON SALE<br/>FOR MEMBERS</h1>
+                    <h1 className="font-extrabold text-4xl md:text-5xl xl:text-6xl mb-4">30-60% OFF<br/>MID SEASON SALE<br/>FOR MEMBERS</h1>
                     <h3 className="sm:text-2xl text-lg xl:text-xl font-bold mb-3">EMBRACE THE ELEMENTS</h3>
                     <p className="xltext-base font-medium mb-6 leading-5">FOR THE MOUNTAIN, THE RAIN,<br/>& EVERYTHING IN BETWEEN</p>
                     <Button text="SHOP ME" bgColor="white" color="black" type="button"/>
