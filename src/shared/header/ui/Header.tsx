@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import logo from '../../../assets/images/logo.svg';
+import { FaRockrms } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { FaShoppingCart } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -12,13 +12,13 @@ const Header: React.FC = () => {
     return (
         <>  
             <div className="Header absolute top-0 left-0 right-0 z-50">
-                <div className='promotion__header bg-gray-200 flex py-1 justify-between items-center px-5'>
-                    <Link to="/"><img src={logo} alt="logo" className="logo sm:hidden flex sm:w-auto w-[30px]" /></Link>
+                <div className='promotion__header bg-gray-200 flex py-2 justify-between items-center px-5'>
+                    <Link to="/"><FaRockrms className="logo sm:hidden flex text-xl" /></Link>
                     <Link to="/login" className="text-sm text-gray-500">Login</Link>
                 </div>
-                <div className="home__header bg-white/80 flex flex-row flex-wrap sm:justify-between justify-center items-center py-3 px-5">
+                <div className="home__header bg-white flex flex-row flex-wrap sm:justify-between justify-center items-center py-3 px-5">
                     <div className="left__panel sm:mb-0 mb-10">
-                        <Link to="/"><img src={logo} alt="logo" className="logo w-[40px] sm:flex hidden" /></Link>
+                        <Link to="/"><FaRockrms className="logo sm:flex hidden text-3xl" /></Link>
                     </div>
                     <div className="central__panel hidden xl:flex justify-center">
                         <nav>

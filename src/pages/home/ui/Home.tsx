@@ -13,7 +13,7 @@ import axios from "axios";
 import { IoIosArrowForward } from "react-icons/io";
 import ProductCard from '../../../shared/product-card/ui/ProductCard.tsx';
 //images
-import hike from "../../../assets/images/hike.svg";
+import hike from "../../../assets/images/hike.jpg";
 import ps1 from "../../../assets/images/shop-promotion.jpg";
 import mensCatalog from "../../../assets/images/m-slide.jpg";
 import womensCatalog from "../../../assets/images/w-slide.webp";
