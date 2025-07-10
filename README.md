@@ -128,7 +128,6 @@ app/
 ## Development
 - **Start the app**: `npm run dev`
 - **Build for production**: `npm run build`
-- **Lint code**: `npm run lint`
 
 ---
 
