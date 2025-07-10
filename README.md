@@ -108,7 +108,7 @@ app/
   - `/api/register` - User registration
   - `/api/logout` - User logout
   - `/api/check-auth` - Check authentication status
-
+  - `/api/csrf` - Token setup
 ---
 
 ## Frontend Overview
