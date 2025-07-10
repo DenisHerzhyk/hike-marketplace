@@ -1,5 +1,4 @@
 import React from "react";
-import ProductType from "./ProductType";
 import { Link } from "react-router-dom";
 import ProductCardType from "./ProductCardType";
 

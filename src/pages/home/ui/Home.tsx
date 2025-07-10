@@ -26,18 +26,6 @@ const Home: React.FC<HomeType> = ({cart, setCart}) => {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    useEffect(() => {
-        addProductToCart()
-        .then(data => {
-            setProducts(data);
-            setLoading(false);
-        })
-        .catch(error => {
-            setError(error);
-            setLoading(false);
-        })
-    }, [])
-
     const addProductToCart = async () => {
         try {
             const response = await axios.get("https://fakestoreapi.com/products")
@@ -50,6 +38,24 @@ const Home: React.FC<HomeType> = ({cart, setCart}) => {
             throw new Error('Failed to fetch data');
         }
     }
+    useEffect(() => {
+        addProductToCart()
+        .then(data => {
+            setProducts(data);
+            setLoading(false);
+        })
+        .catch(error => {
+            setError(error);
+            setLoading(false);
+        })
+    }, [])
+    if (error) {
+        return <div className="text-red-500 text-center mt-[150px]">{error}</div>;
+    }
+    if (loading) {
+        return <div className="text-green-600 text-center mt-[150px]">Loading...</div>;
+    }
+    
     return (
         <>
         <div className="Home">

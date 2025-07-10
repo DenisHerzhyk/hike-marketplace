@@ -4,17 +4,25 @@ import { IoIosSearch } from "react-icons/io";
 import { FaShoppingCart } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaHeart } from "react-icons/fa6";
-import {Link} from 'react-router-dom';
+import axios from "axios";
+import {Link, useNavigate} from 'react-router-dom';
 import '../style/scss/Header.scss';
 
-const Header: React.FC = () => {
+const Header: React.FC <{loggedIn: boolean, setLoggedIn: (v: boolean) => void}> = ({loggedIn, setLoggedIn}) => {
     const [menuOpen, setMenuOpen] = useState(true);
+    const navigate = useNavigate();
+    
+    const handleLogout = () => {
+        axios.delete('/api/logout', {withCredentials:true})
+        setLoggedIn(false);
+        navigate("/login")
+    }
     return (
         <>  
             <div className="Header absolute top-0 left-0 right-0 z-50">
                 <div className='promotion__header bg-gray-200 flex py-2 justify-between items-center px-5'>
                     <Link to="/"><FaRockrms className="logo sm:hidden flex text-xl" /></Link>
-                    <Link to="/login" className="text-sm text-gray-500">Login</Link>
+                    {loggedIn ? <button onClick={handleLogout} className="text-sm text-red-500">Logout</button> : <Link to="/login" className="text-sm text-gray-500">Login</Link>}
                 </div>
                 <div className="home__header bg-white flex flex-row flex-wrap sm:justify-between justify-center items-center py-3 px-5">
                     <div className="left__panel sm:mb-0 mb-10">

@@ -1,0 +1,5 @@
+{
+  "watch": ["server", "../dist"],
+  "ext": "js,mjs,json,tsx,ts",
+  "delay": 1000
+}
