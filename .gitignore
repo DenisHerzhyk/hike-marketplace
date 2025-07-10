@@ -12,6 +12,8 @@ dist
 dist-ssr
 *.local
 
+# .gitignore
+src/assets/images/Postmap.app/
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
